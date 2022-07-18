@@ -7,10 +7,10 @@ from data_base import sqlite_db
 #@dp.message_handler(commands=['start', 'help'])
 async def command_start(message: types.Message):
     try:
-        await bot.send_message(message.from_user.id, 'Suck my dick and bon appetit', reply_markup=kb_client)
+        await bot.send_message(message.from_user.id, '', reply_markup=kb_client)
         await message.delete()
     except:
-        await message.reply('Общение с ботом через ЛС:\n http://t.me/laborant2000_bot')
+        await message.reply('Общение с ботом через ЛС')
 
 #@dp.message_handler(commands=['Режим_работы'])
 async def pizza_open_command(message: types.Message):
