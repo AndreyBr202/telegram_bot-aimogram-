@@ -18,7 +18,7 @@ async def pizza_open_command(message: types.Message):
 
 #@dp.message_handler(commands=['Расположение'])
 async def pizza_place_command(message: types.Message):
-    await bot.send_message(message.from_user.id, 'Сосисочный переулок 228')
+    await bot.send_message(message.from_user.id, 'улица 12')
 
 @dp.message_handler(commands=['Меню'])
 async def pizza_menu_command(message : types.Message):
